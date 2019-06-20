@@ -1,0 +1,185 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sheets.googleapis.com/v4/spreadsheets/1c0VX3jXI_WMBIxIwyeAODlGOyNH_rF7x04IWxEsucX8/values/Form%20Responses%202!A2:E
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Google Sheets API Ruby Quickstart/0.0.0 google-api-ruby-client/0.30.2 Mac
+        OS X/10.13.1 (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Thu, 20 Jun 2019 13:44:01 GMT
+      Authorization:
+      - Bearer ya29.GlwtB5C7mosGZt_vcN36vLIrUvmvNW9mG-CR5uz05A4qf_A-h_X4FRPdy0YQkFr77HnzqQAem9wOQS2c7OQNDAqCVYBzquPJ_5UseMFoJ5ZOb0PL7RnwAmR4Lt7Dag
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Content-Encoding:
+      - gzip
+      Date:
+      - Thu, 20 Jun 2019 13:44:02 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,44,43,39"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "range": "'Form Responses 2'!A2:E1000",
+          "majorDimension": "ROWS",
+          "values": [
+            [
+              "",
+              "Marielyn",
+              "Alvarado",
+              "marielyn_alvarado@yahoo.com",
+              "639173093543"
+            ],
+            [
+              "",
+              "Meri",
+              "Alvarado",
+              "marielyn.alvarado03@gmail.com",
+              "9173093543"
+            ]
+          ]
+        }
+    http_version: 
+  recorded_at: Thu, 20 Jun 2019 13:44:02 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: '{"api_key":"48530ba23eef6b45ffbc95d7c20a60b9","api_secret":"e2f724ba060f82ddf58923af494578a7","campaign_invitation":{"first_name":"Marielyn","last_name":"Alvarado","email":"","user_phone_number":"639173093543"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - my.talkpush.com
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Jun 2019 13:44:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"85035c6e9c20b97d1ba5ddde918e8893"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a577ed1d-6faf-47e5-b45f-e4e95bfa12f9
+      X-Runtime:
+      - '0.410719'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"url":"https://my.talkpush.com/guests/campaign_invitations/936011/outbound_call?company_id=16\u0026outbound_token=854fd969484e07ab849b3062a76f4fee81e9ccd8343464e19894a328b28efdde\u0026source=MICROSITE","pin":"865631","id":936011}'
+    http_version: 
+  recorded_at: Thu, 20 Jun 2019 13:44:03 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: '{"api_key":"48530ba23eef6b45ffbc95d7c20a60b9","api_secret":"e2f724ba060f82ddf58923af494578a7","campaign_invitation":{"first_name":"Meri","last_name":"Alvarado","email":"","user_phone_number":"9173093543"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - my.talkpush.com
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Jun 2019 13:44:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"190c18c2d038a357d4f3100191f410ca"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 910b3364-9484-4def-b809-7629a1f49103
+      X-Runtime:
+      - '0.280514'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"url":"https://my.talkpush.com/guests/campaign_invitations/936012/outbound_call?company_id=16\u0026outbound_token=4603a9898ec260b789d4d1ee6fa8c36811c72f9e566eb0b4b1745449e36f554f\u0026source=MICROSITE","pin":"780560","id":936012}'
+    http_version: 
+  recorded_at: Thu, 20 Jun 2019 13:44:04 GMT
+recorded_with: VCR 5.0.0

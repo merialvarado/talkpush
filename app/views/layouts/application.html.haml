@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title Talkpush Exercise
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  %body
+    %header
+      = render 'layouts/header'
+    %main{:role => "main"}
+      = render 'layouts/messages'
+      .row
+        .col-md-12
+          = yield
+    %footer
+      = render 'layouts/footer'

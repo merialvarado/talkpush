@@ -1,0 +1,48 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
+}
+.container {
+  width: auto;
+  padding: 0 15px;
+}
+.footer .credit {
+  margin: 10px 10px 10px 10px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+}
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+body {
+  margin-top:50px;
+  margin-bottom: 60px;
+  background-color: #eee;
+}
+main {
+  @extend .container;
+  width: 100%;
+  background:#fff;
+}
+html {
+  padding-top:10px;
+  position: relative;
+  min-height: 100%;
+  background:#fff;
+}
+.btn-xl {
+  padding: 10px 20px;
+  font-size: 50px;
+  border-radius: 10px;
+}

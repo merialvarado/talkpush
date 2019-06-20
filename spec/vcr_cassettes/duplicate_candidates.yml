@@ -1,0 +1,185 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sheets.googleapis.com/v4/spreadsheets/1c0VX3jXI_WMBIxIwyeAODlGOyNH_rF7x04IWxEsucX8/values/Form%20Responses%202!A2:E
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Google Sheets API Ruby Quickstart/0.0.0 google-api-ruby-client/0.30.2 Mac
+        OS X/10.13.1 (gzip)
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip,deflate
+      Date:
+      - Thu, 20 Jun 2019 13:48:51 GMT
+      Authorization:
+      - Bearer ya29.GlwtB5C7mosGZt_vcN36vLIrUvmvNW9mG-CR5uz05A4qf_A-h_X4FRPdy0YQkFr77HnzqQAem9wOQS2c7OQNDAqCVYBzquPJ_5UseMFoJ5ZOb0PL7RnwAmR4Lt7Dag
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Content-Encoding:
+      - gzip
+      Date:
+      - Thu, 20 Jun 2019 13:48:52 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,44,43,39"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "range": "'Form Responses 2'!A2:E1000",
+          "majorDimension": "ROWS",
+          "values": [
+            [
+              "",
+              "Marielyn",
+              "Alvarado",
+              "marielyn_alvarado@yahoo.com",
+              "639173093543"
+            ],
+            [
+              "",
+              "Meri",
+              "Alvarado",
+              "marielyn.alvarado03@gmail.com",
+              "9173093543"
+            ]
+          ]
+        }
+    http_version: 
+  recorded_at: Thu, 20 Jun 2019 13:48:53 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: '{"api_key":"48530ba23eef6b45ffbc95d7c20a60b9","api_secret":"e2f724ba060f82ddf58923af494578a7","campaign_invitation":{"first_name":"Marielyn","last_name":"Alvarado","email":"","user_phone_number":"639173093543"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - my.talkpush.com
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Jun 2019 13:48:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"9bbe8ec3be2d827503280952c99b623a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e61f63d1-e7b4-4a59-9164-9011b074d7ad
+      X-Runtime:
+      - '0.032523'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"duplicated"}'
+    http_version: 
+  recorded_at: Thu, 20 Jun 2019 13:48:54 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: '{"api_key":"48530ba23eef6b45ffbc95d7c20a60b9","api_secret":"e2f724ba060f82ddf58923af494578a7","campaign_invitation":{"first_name":"Meri","last_name":"Alvarado","email":"","user_phone_number":"9173093543"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - my.talkpush.com
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Jun 2019 13:48:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"9bbe8ec3be2d827503280952c99b623a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1b2dce3d-e2d5-4317-80ea-84302167add9
+      X-Runtime:
+      - '0.024706'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"duplicated"}'
+    http_version: 
+  recorded_at: Thu, 20 Jun 2019 13:48:55 GMT
+recorded_with: VCR 5.0.0
